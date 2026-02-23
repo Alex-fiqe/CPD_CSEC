@@ -1,7 +1,7 @@
-n=int(input())
-d=input()
-b=0
-for i in range(len(d)-1):
-  if d[i]==d[i-1]:
-    b+=1
-print(b)
+n = int(input())
+s = input()
+count = 0
+for i in range(1, n):
+    if s[i] == s[i-1]:
+        count += 1
+print(count)
