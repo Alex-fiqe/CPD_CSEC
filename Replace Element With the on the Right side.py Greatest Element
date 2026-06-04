@@ -1,0 +1,9 @@
+class Solution:
+    def replaceElements(self, arr):
+        max_=-1
+        for i in range(len(arr)-1,-1,-1):
+            current = arr[i]
+            arr[i] = max_
+            while current > max_:
+                max_=current
+        return arr
